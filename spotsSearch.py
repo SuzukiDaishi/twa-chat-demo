@@ -19,5 +19,4 @@ def spotSortByDocuments(chatDoc, spotsData) :
         - sotedSpotsData
             - ソートしたスポットのデータ
     """
-
-    pass
+	
