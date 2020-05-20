@@ -1,3 +1,3 @@
 # twa-chat-demo
 
-##mecabの入れ方
+## mecabの入れ方
