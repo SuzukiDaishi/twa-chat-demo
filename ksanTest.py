@@ -14,9 +14,8 @@ python ksanTest.py
 from  spotsSearch import *
 import json
 
-json_open = open('database/database.json', 'r')
+json_open = open('database/database.json', 'r',encoding='utf-8_sig')
 spotsData = json.load(json_open)
-
 
 test_word = '桜が見たいでやんす'
 test_out  = spotSortByDocuments(test_word, spotsData)
