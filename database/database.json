@@ -6,5 +6,13 @@
             "longitude": 136.6604628
         },
         "description": "公園です。"
+    },
+	{
+        "name": "金沢城",
+        "location": {
+            "latitude": 36.5683812,
+            "longitude": 136.6616254
+        },
+        "description": "城です。"
     }
 ]
