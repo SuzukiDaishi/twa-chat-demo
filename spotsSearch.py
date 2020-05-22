@@ -35,9 +35,9 @@ def spotSortByDocuments(chatDoc, spotsData) :
         spot_cos  = calc_cos(chat_freq, spot_freq)
         cos_list.append( spot_cos )
 
-    # TODO: ここで cos_list(spotsDataと同じ順番でcos類似度が書いてあるリスト) を用いてspotsDataをソートする
-    print(cos_list)
-    return 
+    sorted_spotsData = sorted(spotsData, key=lambda item: cos_list[spotsData.index(item)])
+
+    return sorted_spotsData
 
 def words_to_sep(text): #分かち書き
     out_words = []
