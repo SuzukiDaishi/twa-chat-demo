@@ -1,11 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
-</head>
+<html>
 <body>
-    <h1>H</h1>
+    <header class="chat-grad has-text-centered pad-tob-bottom fixed-top">
+        <h1 class="title is-3 text-white">
+            Chat App
+        </h1>
+        <p class="subtitle text-white">
+            金沢でのことを聞いてみてください
+        </p>
+    </header>
+
+    <div id="home-view">
+        <section class="container pad-top-big pad-side">
+            <div class="box mag-side pad-side pad-top mag-bottom">
+                <div class="columns pad-top">
+                <h3 class="title is-3 grad-text">
+                    チャットで金沢観光の質問！
+                </h3>
+            </div> 
+            <div class="columns pad-top">
+                <p class="is-size-5">
+                    金沢の観光に詳しいAIチャットボットがあなたをサポート<br >
+                    あなただけの特別な旅行プランを提案<br >
+                    最高の体験をあなたに提供します<br >
+                    さぁ、AIと一緒に金沢の街を冒険しよう！！
+                </p>
+            </div>
+            <div class="columns pad-top pad-bottom">
+                <a href="chat.html" class="button is-medium is-rounded grad-bg">さぁ 始めよう！</a>
+            </div>
+          </div>
+        </section>
+      </div>
 </body>
 </html>
+
+<style>
+body, button, input, select, textarea {
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    color: #4a4a4a;
+    display: block;
+    padding: 1.25rem;
+}
+.subtitle {
+    color: #4a4a4a;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.title{
+    font-weight: 600;
+    line-height: 1.125;
+}
+.is-3 {
+    font-size: 2rem;
+}
+.is-size-5{
+    font-size: 20px;
+}
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.25em;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: calc(.375em - 1px);
+    padding-left: calc(.625em - 1px);
+    padding-right: calc(.625em - 1px);
+    padding-top: calc(.375em - 1px);
+    position: relative;
+    vertical-align: top;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    border-color: #dbdbdb;
+    color: #363636;
+    cursor: pointer;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: .75em;
+    padding-right: .75em;
+    text-align: center;
+    white-space: nowrap;
+}
+.text-white {
+    color: #fff;
+}
+.has-text-centered {
+    text-align: center;
+}
+.chat-grad {
+    background: linear-gradient(0.2turn, #e66465, #9198e5);
+}
+.pad-tob-bottom {
+    padding: 2vh 0;
+}
+#home-view {
+    width: 100%;
+    height: 100vh;
+}
+.pad-top-small {
+    padding-top: 10px;
+}
+.pad-top {
+    padding-top: 5vh;
+}
+.pad-top-big {
+    padding-top: 10vh;
+}
+.pad-side {
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+.mag-side {
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+.mag-top {
+    margin-top: 2.5vh;
+}
+.mag-bottom {
+    margin-bottom: 2.5vh;
+}
+.pad-bottom {
+    padding-bottom: 5vh;
+}
+.grad-bg {
+    color: white;
+    background: linear-gradient(0.2turn, #e66465, #9198e5);
+}
+.grad-bg:hover {
+    color: #fff;
+}
+.grad-text {
+    background: linear-gradient(0.2turn, #e66465, #9198e5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+</style>
