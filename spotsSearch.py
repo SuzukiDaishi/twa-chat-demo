@@ -24,7 +24,7 @@ def spotSortByDocuments(chatDoc, spotsData) :
         - sotedSpotsData
             - ソートしたスポットのデータ
     """
-	pass
+    return 
 
 def words_to_sep(text): #分かち書き
     out_words = []
