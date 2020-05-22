@@ -1,5 +1,4 @@
 from os import path
-import numpy as np
 import MeCab
 import math
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -24,6 +23,20 @@ def spotSortByDocuments(chatDoc, spotsData) :
         - sotedSpotsData
             - ソートしたスポットのデータ
     """
+    
+    cos_list = []
+
+    chat_sep  = words_to_sep(chatDoc)
+    chat_freq = words_to_freqdict(chat_sep)
+
+    for spot in spotsData:
+        spot_sep  = words_to_sep(spot["description"])
+        spot_freq = words_to_freqdict(spot_sep)
+        spot_cos  = calc_cos(chat_freq, spot_freq)
+        cos_list.append( spot_cos )
+
+    # TODO: ここで cos_list(spotsDataと同じ順番でcos類似度が書いてあるリスト) を用いてspotsDataをソートする
+    print(cos_list)
     return 
 
 def words_to_sep(text): #分かち書き
