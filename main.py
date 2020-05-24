@@ -14,11 +14,11 @@ def chat() :
 
 @app.route('/api/chat')
 def chat_api():
-    chat_doc = request.args.get('text', default="")
+    chat_doc = request.args.get('text', default="", type=str)
     json_open = open('database/database.json', 'r',encoding='utf-8_sig')
     spots_data = json.load(json_open)
     chat_res = spotSortByDocuments(chat_doc, spots_data)
     return jsonify(chat_res)
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
