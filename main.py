@@ -1,4 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify, request
+from  spotsSearch import *
+import json
 
 app = Flask(__name__)
 
@@ -10,5 +12,13 @@ def home() :
 def chat() :
     return render_template('chat.html')
 
+@app.route('/api/chat')
+def chat_api():
+    chat_doc = request.args.get('text', default="")
+    json_open = open('database/database.json', 'r',encoding='utf-8_sig')
+    spots_data = json.load(json_open)
+    chat_res = spotSortByDocuments(chat_doc, spots_data)
+    return jsonify(chat_res)
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)

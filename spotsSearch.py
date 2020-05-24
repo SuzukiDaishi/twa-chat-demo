@@ -34,9 +34,7 @@ def spotSortByDocuments(chatDoc, spotsData) :
         spot_freq = words_to_freqdict(spot_sep)
         spot_cos  = calc_cos(chat_freq, spot_freq)
         cos_list.append( spot_cos )
-
-    sorted_spotsData = sorted(spotsData, key=lambda item: cos_list[spotsData.index(item)])
-
+    sorted_spotsData = sorted(spotsData, key=lambda item: cos_list[spotsData.index(item)], reverse=True)
     return sorted_spotsData
 
 def words_to_sep(text): #分かち書き
