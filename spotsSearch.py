@@ -75,5 +75,8 @@ def calc_cos(dictA, dictB): #cos類似度
         for keyB,valueB in dictB.items():
             if keyA==keyB:
                 dotProduct = dotProduct + valueA*valueB
-    cos = dotProduct / (lengthA*lengthB)
+    if lengthA*lengthB == 0:
+        cos = 0
+    else:
+        cos = dotProduct / (lengthA*lengthB)
     return cos
