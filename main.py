@@ -20,5 +20,5 @@ def chat_api():
     chat_res = spotSortByDocuments(chat_doc, spots_data)
     return jsonify(chat_res)
 
-if __name__ == "__main__":
-    app.run(debug=False, port=5000)
+if __name__ == '__main__':
+    app.run(debug=False, host='0.0.0.0', port=5000)
