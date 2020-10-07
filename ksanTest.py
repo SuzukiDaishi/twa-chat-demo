@@ -18,7 +18,7 @@ import json
 json_open = open('database/database.json', 'r',encoding='utf-8_sig')
 spotsData = json.load(json_open)
 
-chat_doc = 'これ ➡︎ Sakura has been around since the Warring States period!!'
+chat_doc = 'japanese garden!!'
 out = spotSortByDocuments(chat_doc, spotsData)
 
 print(out)
