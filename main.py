@@ -21,4 +21,4 @@ def chat_api():
     return jsonify(chat_res)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False, port=5000)
