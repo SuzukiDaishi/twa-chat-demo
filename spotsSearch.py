@@ -1,6 +1,5 @@
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 import re
-import pandas as pd
 
 def spotSortByDocuments(chatDoc, spotsData) :
     corpus = makeCorpus(chatDoc, spotsData)
